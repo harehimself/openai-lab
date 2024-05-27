@@ -1,14 +1,9 @@
 ## This example demonstrates a hypothetical function call to an API endpoint for generating text, like using the GPT model.
 
 import openai
-from dotenv import load_dotenv
-import os
-
-# Load the .env file
-load_dotenv()
 
 ## Set your OpenAI API key
-openai.api_key = os.getenv('OPENAI_API_KEY')
+openai.api_key = OPENAI_API_KEY
 
 ## Function call to the OpenAI API
 response = openai.Completion.create(

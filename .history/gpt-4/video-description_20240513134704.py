@@ -1,7 +1,5 @@
 from IPython.display import display, Image, Audio
-import openai
-from dotenv import load_dotenv
-import os
+
 import cv2  ## We're using OpenCV to read video, to install !pip install opencv-python
 import base64
 import time
@@ -9,10 +7,7 @@ from openai import OpenAI
 import os
 import requests
 
-# Load the .env file
-load_dotenv()
-
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI()
 
 ## Using GPT's visual capabilities to get a description of a video
 video = cv2.VideoCapture("data/bison.mp4")

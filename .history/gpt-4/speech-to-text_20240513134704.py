@@ -1,16 +1,10 @@
 ## TRANSCRIBE AUDIO
-import openai
-from dotenv import load_dotenv
-import os
-
-# Load the .env file
-load_dotenv()
 
 ## The transcriptions API takes as input the audio file you want to transcribe and the desired output file format for the transcription of the audio. We currently support multiple input and output file formats.
 
 from openai import OpenAI
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI()
 
 audio_file = open("/path/to/file/audio.mp3", "rb")
 transcript = client.audio.transcriptions.create(model="whisper-1", file=audio_file)

@@ -7,14 +7,10 @@
 
 ## Write the Fine-Tuning Code: Below is an example code snippet for fine-tuning an OpenAI model.
 import openai
-from dotenv import load_dotenv
-import os
 
-# Load the .env file
-load_dotenv()
 
 def fine_tune_model(training_file_path):
-    openai.api_key = os.getenv('OPENAI_API_KEY')
+    openai.api_key = OPENAI_API_KEY  ## Replace with your API key
 
     try:
         ## Upload the file

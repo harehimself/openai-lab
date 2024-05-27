@@ -13,6 +13,11 @@ import os
 # Load the .env file
 load_dotenv()
 
+# Get your OpenAI API key from the .env file
+
+
+
+
 def fine_tune_model(training_file_path):
     openai.api_key = os.getenv('OPENAI_API_KEY')
 

@@ -1,10 +1,5 @@
 ## Generate spoken audio from input text
-import openai
-from dotenv import load_dotenv
-import os
 
-# Load the .env file
-load_dotenv()
 ##from pathlib import Path
 from openai import OpenAI
 

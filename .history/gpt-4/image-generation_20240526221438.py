@@ -1,12 +1,6 @@
 ## Generate an image.
-import openai
-from dotenv import load_dotenv
-import os
+
 from openai import OpenAI
-
-# Load the .env file
-load_dotenv()
-
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 response = client.images.generate(

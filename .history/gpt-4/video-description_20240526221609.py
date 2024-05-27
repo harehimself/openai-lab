@@ -2,6 +2,7 @@ from IPython.display import display, Image, Audio
 import openai
 from dotenv import load_dotenv
 import os
+
 import cv2  ## We're using OpenCV to read video, to install !pip install opencv-python
 import base64
 import time

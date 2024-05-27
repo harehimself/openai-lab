@@ -3,6 +3,7 @@
 import openai
 from dotenv import load_dotenv
 import os
+
 from openai import OpenAI
 
 # Load the .env file

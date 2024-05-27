@@ -1,10 +1,4 @@
 ## TRANSCRIBE AUDIO
-import openai
-from dotenv import load_dotenv
-import os
-
-# Load the .env file
-load_dotenv()
 
 ## The transcriptions API takes as input the audio file you want to transcribe and the desired output file format for the transcription of the audio. We currently support multiple input and output file formats.
 
