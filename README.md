@@ -28,6 +28,7 @@
 - [Benefits](#benefits)
 - [How It Compares](#how-it-compares)
 - [License](#license)
+<br>
 
 ## Features
 - Comprehensive collection of OpenAI experiments and projects
